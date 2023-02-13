@@ -34,8 +34,9 @@
 }
 
 .events {
-    border: 2px dashed #00ff00;
+    border: 2px #00ff00;
     border-radius: 20px;
+    border-style: dashed solid;
     margin: 1rem;
     min-width: 225px;
 }
