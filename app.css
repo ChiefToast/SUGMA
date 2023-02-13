@@ -84,3 +84,16 @@ h2 {
     font-size: 24px;
     font-weight: 100;
 }
+
+.bottom {
+    background: none;
+    color: #00ff00;
+    font-family: monospace;
+    border: 2px #00ff00;
+    border-style: dashed solid;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    height: 35px;
+    font-size: 18px;
+    border-bottom: 0px;
+}
