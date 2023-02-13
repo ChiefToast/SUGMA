@@ -58,6 +58,8 @@ body {
     width: 100px;
     height: 35px;
     font-size: 18px;
+    border-left-width: 1px;
+    border-right-width: 1px;
 }
 
 .timers:hover {
@@ -67,7 +69,6 @@ body {
 .timers:active {
     background: #00ff00;
     color: black;
-    transition: .5s ease-in;
 }
 
 p {
@@ -94,6 +95,8 @@ h2 {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     height: 35px;
+    padding-left: 35px;
+    padding-right: 35px;
     font-size: 18px;
     border-bottom: 0px;
 }
