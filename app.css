@@ -10,6 +10,10 @@
     }
 }
 
+h1 {
+    color: #00ff00;
+}
+
 .small {
     display: none;
 }
@@ -33,32 +37,71 @@
     }
 }
 
-.events {
+#events {
     border: 2px #00ff00;
     border-radius: 20px;
     border-style: dashed solid;
     margin: 1rem;
     min-width: 225px;
+    border-bottom: 0px;
 }
 
 body {
     background: linear-gradient(rgba(18, 16, 16, 0.907) 50%, rgb(0, 0, 0) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-    color: #00ff00;
-    font-family: monospace;
     text-align: center;
     z-index: 2;
     background-size: 100% 2px, 3px 100%;
+    font-weight: 100;
+}
+
+#text {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    mix-blend-mode: difference;
+    width: 400px;
+    font-size: 18px;
+    color: #00ff00;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#myProgress {
+    display: flex;
+    height: 40px;
+    border: 2px #00ff00;
+    border-style: dashed solid;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background: none;
+    width: 100%;
+}
+
+#myBar {
+    width: 0%;
+    background-color: #00ff00;
+    height: 40px;
+}
+
+#title {
+    color: #00ff00;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+button {
+    background: none;
+    border: 2px #00ff00;
+    border-style: dashed solid;
+    height: 40px;
+    font-size: 18px;
 }
 
 .timers {
-    background: none;
-    color: #00ff00;
-    font-family: monospace;
-    border: 2px #00ff00;
-    border-style: dashed solid;
+    color: var(--colorChange, #00ff00);
     width: 100px;
-    height: 35px;
-    font-size: 18px;
     border-left-width: 1px;
     border-right-width: 1px;
 }
@@ -68,36 +111,20 @@ body {
 }
 
 .timers:active {
-    background: #00ff00;
+    background: var(--backgroundChange, #00ff00);
     color: black;
 }
 
-p {
-    margin-top: 5%;
-    margin-bottom: 5%;
-    font-size: 18px;
+#button-start {
+    border-bottom-left-radius: 18px;
+    border-left: 0;
 }
 
-h1 {
-    font-weight: 100;
+#button-confirm {
+    border-bottom-right-radius: 18px;
+    border-right: 0;
 }
 
-h2 {
-    font-size: 24px;
-    font-weight: 100;
-}
-
-.bottom {
-    background: none;
-    color: #00ff00;
+* {
     font-family: monospace;
-    border: 2px #00ff00;
-    border-style: dashed solid;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    height: 35px;
-    padding-left: 35px;
-    padding-right: 35px;
-    font-size: 18px;
-    border-bottom: 0px;
 }
